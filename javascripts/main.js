@@ -54,7 +54,6 @@ Tree.prototype.grow = function (amount) {
 Tree.prototype.trim = function (amount) {
     this.decreaseHeight(amount);
     this.branches--;
-    console.log("chomp chomp chomp");
 };
 
 // Each time the height of a tree increases by 10, the value of branch should increase by one.
@@ -97,8 +96,8 @@ function showMyTrees() {
     var buildstring = "";
     buildstring += `<div class="col-md-4">`
     buildstring += `<p class="timeP">After ${timesGrown} seconds...</p>`
-    buildstring += `<p class="pearTree"><b>Pear Tree</b> is now ${PearTree.height}cm tall and has ${PearTree.branches} branches</p>`;
-    buildstring += `<p class="oakTree"><b>Oak Tree</b> is now ${OakTree.height}cm tall and has ${OakTree.branches} branches</p>`;
+    buildstring += `<p class="pearTree"><b>Pear Tree</b> is now <b>${PearTree.height}cm</b> tall and has <b>${PearTree.branches}</b> branches</p>`;
+    buildstring += `<p class="oakTree"><b>Oak Tree</b> is now <b>${OakTree.height}cm</b> tall and has <b>${OakTree.branches}</b> branches</p>`;
     buildstring += `<div>`
     output.append(buildstring);
 }
