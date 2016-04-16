@@ -5,12 +5,15 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-.col-md-4 {
-    background: rgba(112, 128, 144, .8);
+.col-md-4{
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-top: 7px solid transparent;
     border-bottom: 5px solid transparent;
+}
+
+.card {
+    background: rgba(112, 128, 144, .8);
 }
 
 .timeP {

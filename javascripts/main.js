@@ -94,11 +94,11 @@ function growMyTrees() {
 // Also output the current height of each tree and how many branches it has to the DOM.
 function showMyTrees() {
     var buildstring = "";
-    buildstring += `<div class="col-md-4">`
+    buildstring += `<div class="col-md-4"><div class="card">`
     buildstring += `<p class="timeP">After ${timesGrown} seconds...</p>`
     buildstring += `<p class="pearTree"><b>Pear Tree</b> is now <b>${PearTree.height}cm</b> tall and has <b>${PearTree.branches}</b> branches</p>`;
     buildstring += `<p class="oakTree"><b>Oak Tree</b> is now <b>${OakTree.height}cm</b> tall and has <b>${OakTree.branches}</b> branches</p>`;
-    buildstring += `<div>`
+    buildstring += `</div></div>`
     output.append(buildstring);
 }
 
