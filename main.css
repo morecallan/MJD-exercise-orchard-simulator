@@ -1,0 +1,35 @@
+body {
+    background: url("peartree.jpg") center center fixed;
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+
+.col-md-4 {
+    background: rgba(112, 128, 144, .8);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 7px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+.timeP {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .6);
+}
+
+.pearTree {
+    color: white;
+    margin: 3px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.oakTree {
+    color: white;
+    margin: 3px;
+    font-size: 17px;
+    text-align: center;
+}

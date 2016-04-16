@@ -1,7 +1,9 @@
 "use strict";
 
 var output = $("#output");
-var timesGrown = 1;
+var timesGrown = 0;
+
+output.html(`<div class="row">`)
 
 // Create a Plant function.
 var Plant = function() {
@@ -93,8 +95,11 @@ function growMyTrees() {
 // Also output the current height of each tree and how many branches it has to the DOM.
 function showMyTrees() {
     var buildstring = "";
-    buildstring += `<p>Pear tree is now ${PearTree.height}cm tall and has ${PearTree.branches} branches</p>`;
-    buildstring += `<p>Oak tree is now ${OakTree.height}cm tall and has ${OakTree.branches} branches</p>`;
+    buildstring += `<div class="col-md-4">`
+    buildstring += `<p class="timeP">After ${timesGrown} seconds...</p>`
+    buildstring += `<p class="pearTree"><b>Pear Tree</b> is now ${PearTree.height}cm tall and has ${PearTree.branches} branches</p>`;
+    buildstring += `<p class="oakTree"><b>Oak Tree</b> is now ${OakTree.height}cm tall and has ${OakTree.branches} branches</p>`;
+    buildstring += `<div>`
     output.append(buildstring);
 }
 
